@@ -40,6 +40,7 @@ header{
 
 #logo h1{
     font-size: 1.7rem;
+    color: var(--cor3);
 }
 
 
@@ -100,9 +101,14 @@ main{
 
 #title-sn{
     height: 5vh;
-    background-color: var(--cor2);
+    background-color: var(--cor1);
+    color: var(--cor3);
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#sobre p{
+    color: var(--cor3);
 }

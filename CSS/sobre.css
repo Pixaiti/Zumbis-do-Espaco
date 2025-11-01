@@ -39,7 +39,8 @@ header{
 }
 
 header a{
-        font-family: 'Bitten';
+    font-family: 'Bitten';
+    font-size: 1.9rem;
     color: white;
     text-decoration: none;
 }

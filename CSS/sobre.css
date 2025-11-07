@@ -3,53 +3,54 @@
     src: url(../IMG/Bitten.ttf) format('truetype');
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-body{
+body {
     height: 120vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url('../IMG/Sobre-mim.png');
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../IMG/Sobre-mim.png');
     background-size: cover;
     background-position: center;
 }
 
-header{
+header {
     position: fixed;
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 15vh;
     z-index: 1;
+    margin-top: 1vh;
 }
 
-header a{
+header a {
     font-family: 'Bitten';
     color: white;
     text-decoration: none;
 }
 
-header a:hover{
+header a:hover {
     text-decoration: underline;
     color: hsl(13, 100%, 50%);
     transition: 0.3s ease;
 }
 
-#logo{
+#logo {
     margin-left: 5vw;
     height: 15vh;
 }
 
-header ul{
+header ul {
     list-style: none;
     height: 70%;
     width: 50vw;
@@ -60,18 +61,18 @@ header ul{
     margin-right: 5vw;
 }
 
-header ul li{
+header ul li {
     color: white;
 }
 
-main{
+main {
     position: absolute;
     top: 15vh;
     width: 100%;
     height: 70vh;
 }
 
-#perfil-card{
+#perfil-card {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -81,7 +82,7 @@ main{
     width: 20%;
 }
 
-.perfil{
+.perfil {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -90,18 +91,18 @@ main{
     background-color: hsl(13, 75%, 20%);
 }
 
-.perfil img{
+.perfil img {
     height: 90%;
     width: 23%;
     border-radius: 100%;
 }
 
-.perfil h1{
+.perfil h1 {
     width: 50%;
     font-size: 2rem;
 }
 
-.sobre-mim{
+.sobre-mim {
     padding: 5%;
     width: 100%;
     display: flex;
@@ -110,29 +111,30 @@ main{
     background-color: hsl(1, 60%, 40%);
 }
 
-.sobre-mim h2{
+.sobre-mim h2 {
     background-color: hsl(1, 55%, 40%);
     width: 100%;
     text-align: center;
     margin-bottom: 1vh;
     font-size: 1.6rem;
 }
-.sobre-mim p{
+
+.sobre-mim p {
     font-size: 1.15rem;
     line-height: 1.4;
     text-align: center;
 }
 
-#objetivo{
+#objetivo {
     right: 10%;
     top: 25%;
     position: absolute;
     height: 60%;
-    width: 50%;    
+    width: 50%;
     background-color: hsl(1, 60%, 40%);
 }
 
-#objetivo h1{
+#objetivo h1 {
     background-color: hsl(13, 75%, 20%);
     width: 100%;
     text-align: center;
@@ -140,21 +142,21 @@ main{
     margin-bottom: 3vh;
 }
 
-#objetivo p{
+#objetivo p {
     font-size: 1.15rem;
     line-height: 1.4;
     text-align: center;
     margin-bottom: 5vh;
 }
 
-#shadow{
+#shadow {
     width: 100%;
     margin-top: 85vh;
     height: 20vh;
     background-image: linear-gradient(to top, rgb(0, 0, 0), transparent);
 }
 
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -167,10 +169,14 @@ footer{
     z-index: inherit;
 }
 
-footer ul{
+footer ul {
     list-style: none;
     width: 70%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+section {
+    opacity: 95%;
 }

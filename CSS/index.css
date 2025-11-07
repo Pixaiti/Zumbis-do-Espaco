@@ -3,54 +3,55 @@
     src: url(../IMG/Bitten.ttf) format('truetype');
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-body{
+body {
     height: 120vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url("https://roadiecrew.com/wp-content/uploads/Zumbis08.jpg");
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("https://roadiecrew.com/wp-content/uploads/Zumbis08.jpg");
     background-size: cover;
 }
 
-header{
+header {
     position: fixed;
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 15vh;
     z-index: 1;
+    margin-top: 1vh;
 }
 
-header a{
+header a {
     font-family: 'Bitten';
     color: white;
     text-decoration: none;
 }
 
-header a:hover{
+header a:hover {
     text-decoration: underline;
     color: hsl(13, 100%, 50%);
     transition: 0.3s ease;
 }
 
-main{
+main {
     position: absolute;
     width: 100%;
     height: 85vh;
     margin-top: 15vh;
 }
 
-#video{
+#video {
     position: fixed;
     top: 15vh;
     right: 3vw;
@@ -59,17 +60,17 @@ main{
     background-color: white;
 }
 
-#video iframe{
+#video iframe {
     height: 100%;
     width: 100%;
 }
 
-#logo{
+#logo {
     margin-left: 5vw;
     height: 15vh;
 }
 
-header ul{
+header ul {
     list-style: none;
     height: 70%;
     width: 50vw;
@@ -80,18 +81,18 @@ header ul{
     margin-right: 5vw;
 }
 
-header ul li{
+header ul li {
     color: white;
 }
 
-#shadow{
+#shadow {
     width: 100%;
     margin-top: 85vh;
     height: 20vh;
     background-image: linear-gradient(to top, rgb(0, 0, 0), transparent);
 }
 
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -104,7 +105,7 @@ footer{
     z-index: inherit;
 }
 
-footer ul{
+footer ul {
     list-style: none;
     width: 70%;
     display: flex;

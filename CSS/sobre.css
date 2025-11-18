@@ -1,6 +1,6 @@
 @font-face {
     font-family: Bitten;
-    src: url(../IMG/Bitten.ttf) format('truetype');
+    src: url(../IMG/RubikWetPaint-Regular.ttf) format('truetype');
 }
 
 * {
@@ -24,6 +24,7 @@ body {
 }
 
 header {
+    z-index: 0;
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -37,17 +38,30 @@ header a {
     font-family: 'Bitten';
     color: white;
     text-decoration: none;
+    color: hsl(13, 100%, 40%);
 }
 
 header a:hover {
     text-decoration: underline;
-    color: hsl(13, 100%, 50%);
+    color: lime;
     transition: 0.3s ease;
 }
 
 #logo {
     margin-left: 5vw;
     height: 15vh;
+    transition: all 0.8s ease;
+}
+
+#logo.a {
+    margin-top: 0.5vh;
+    height: 10vh;
+}
+
+#logo.a {
+    margin-top: 0.5vh;
+    height: 10vh;
+    z-index: 0;
 }
 
 header ul {
@@ -73,21 +87,26 @@ main {
 }
 
 #perfil-card {
+    z-index: 1;
     position: relative;
     display: flex;
     flex-direction: column;
     top: 10%;
     left: 10vw;
     height: 80%;
+    border-radius: 10%;
     width: 20%;
 }
 
 .perfil {
+    z-index: 1;
+    padding: 0.5vw;
+    border-radius: 10% 10% 0% 0%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    height: 20%;
+    height: 25%;
     background-color: hsl(13, 75%, 20%);
 }
 
@@ -108,6 +127,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 0% 0% 5% 5%;
     background-color: hsl(1, 60%, 40%);
 }
 
@@ -132,14 +152,17 @@ main {
     height: 60%;
     width: 50%;
     background-color: hsl(1, 60%, 40%);
+    border-radius: 10% 10% 5% 5%;
 }
 
 #objetivo h1 {
+    padding: 0.4vw;
     background-color: hsl(13, 75%, 20%);
     width: 100%;
     text-align: center;
     font-size: 1.6rem;
     margin-bottom: 3vh;
+    border-radius: 10% 10% 0% 0%;
 }
 
 #objetivo p {

@@ -1,6 +1,6 @@
 @font-face {
     font-family: Bitten;
-    src: url(../IMG/Bitten.ttf) format('truetype');
+    src: url(../IMG/RubikWetPaint-Regular.ttf) format('truetype');
 }
 
 * {
@@ -22,6 +22,7 @@ body {
     background-size: cover;
 }
 
+
 header {
     position: fixed;
     display: flex;
@@ -36,11 +37,12 @@ header a {
     font-family: 'Bitten';
     color: white;
     text-decoration: none;
+    color: hsl(13, 100%, 40%);
 }
 
 header a:hover {
     text-decoration: underline;
-    color: hsl(13, 100%, 50%);
+    color: lime;
     transition: 0.3s ease;
 }
 
@@ -68,6 +70,12 @@ main {
 #logo {
     margin-left: 5vw;
     height: 15vh;
+    transition: all 0.8s ease;
+}
+
+#logo.a {
+    margin-top: 0.5vh;
+    height: 10vh;
 }
 
 header ul {

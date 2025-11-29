@@ -1,0 +1,370 @@
+@font-face {
+    font-family: Bitten;
+    src: url(../IMG/RubikWetPaint-Regular.ttf) format('truetype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.lixo {
+    font-family: 'Bitten';
+    color: lime;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("https://ligadoamusica.com.br/wp-content/uploads/2024/04/zumbis-do-espaco.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 15vh;
+    z-index: 1;
+}
+
+header a {
+    font-family: 'Bitten';
+    color: white;
+    text-decoration: none;
+    color: hsl(13, 100%, 40%);
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: lime;
+    transition: 0.3s ease;
+}
+
+#logo {
+    margin-top: 0.5vh;
+    margin-left: 5vw;
+}
+
+#header {
+    height: 15vh;
+    transition: all 0.8s ease;
+}
+
+#header.a {
+    height: 10vh;
+}
+
+header ul {
+    list-style: none;
+    height: 70%;
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-right: 5vw;
+}
+
+header ul li {
+    overflow: visible;
+    position: relative;
+    color: white;
+}
+
+main {
+    position: absolute;
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+}
+
+.slider {
+    width: 25vw;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slider img {
+    width: 25vw;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 0.8s ease;
+}
+
+.manual-navigation {
+    z-index: 2;
+    position: absolute;
+    width: 25%;
+    display: flex;
+    margin-top: 51vh;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.8s ease;
+}
+
+.manual-btn:hover {
+    background-color: white
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 0.3vw;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+    transition: 1s ease;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -25%;
+    transition: 1s ease;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -50%;
+    transition: 1s ease;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -75%;
+    transition: 1s ease;
+}
+
+#radio5:checked ~ .first {
+    margin-left: -100%;
+    transition: 1s ease;
+}
+
+#radio6:checked ~ .first {
+    margin-left: -125%;
+    transition: 1s ease;
+}
+
+#radio7:checked ~ .first {
+    margin-left: -150%;
+    transition: 1s ease;
+}
+
+#radio8:checked ~ .first {
+    margin-left: -175%;
+    transition: 1s ease;
+}
+
+#radio9:checked ~ .first {
+    margin-left: -200%;
+    transition: 1s ease;
+}
+
+#radio10:checked ~ .first {
+    margin-left: -225%;
+    transition: 1s ease;
+}
+
+#radio11:checked ~ .first {
+    margin-left: -250%;
+    transition: 1s ease;
+}
+
+#radio12:checked ~ .first {
+    margin-left: -275%;
+    transition: 1s ease;
+}
+
+#radio13:checked ~ .first {
+    margin-left: -300%;
+    transition: 1s ease;
+}
+
+#radio14:checked ~ .first {
+    margin-left: -325%;
+    transition: 1s ease;
+}
+
+#radio15:checked ~ .first {
+    margin-left: -350%;
+    transition: 1s ease;
+}
+
+#radio16:checked ~ .first {
+    margin-left: -375%;
+    transition: 1s ease;
+}
+
+#radio17:checked ~ .first {
+    margin-left: -400%;
+    transition: 1s ease;
+}
+
+#radio18:checked ~ .first {
+    margin-left: -425%;
+    transition: 1s ease;
+}
+
+#radio19:checked ~ .first {
+    margin-left: -450%;
+    transition: 1s ease;
+}
+
+#radio20:checked ~ .first {
+    margin-left: -475%;
+    transition: 1s ease;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 25vw;
+    margin-top: 51vh;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.8s ease;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 0.3vw;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: white;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: white;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: white;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: white;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background-color: white;
+}
+
+#radio6:checked ~ .navigation-auto .auto-btn6{
+    background-color: white;
+}
+
+#radio7:checked ~ .navigation-auto .auto-btn7{
+    background-color: white;
+}
+
+#radio8:checked ~ .navigation-auto .auto-btn8{
+    background-color: white;
+}
+
+#radio9:checked ~ .navigation-auto .auto-btn9{
+    background-color: white;
+}
+
+#radio10:checked ~ .navigation-auto .auto-btn10{
+    background-color: white;
+}
+
+#radio11:checked ~ .navigation-auto .auto-btn11{
+    background-color: white;
+}
+
+#radio12:checked ~ .navigation-auto .auto-btn12{
+    background-color: white;
+}
+
+#radio13:checked ~ .navigation-auto .auto-btn13{
+    background-color: white;
+}
+
+#radio14:checked ~ .navigation-auto .auto-btn14{
+    background-color: white;
+}
+
+#radio15:checked ~ .navigation-auto .auto-btn15{
+    background-color: white;
+}
+
+#radio16:checked ~ .navigation-auto .auto-btn16{
+    background-color: white;
+}
+
+#radio17:checked ~ .navigation-auto .auto-btn17{
+    background-color: white;
+}
+
+#radio18:checked ~ .navigation-auto .auto-btn18{
+    background-color: white;
+}
+
+#radio19:checked ~ .navigation-auto .auto-btn19{
+    background-color: white;
+}
+
+#radio20:checked ~ .navigation-auto .auto-btn20{
+    background-color: white;
+}
+
+#shadow {
+    width: 100%;
+    margin-top: 65vh;
+    height: 20vh;
+    background-image: linear-gradient(to top, rgb(0, 0, 0), transparent);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: lightgray;
+    margin-top: 85vh;
+    background-color: black;
+    height: 15vh;
+    width: 100%;
+    position: absolute;
+}
+
+footer ul {
+    list-style: none;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

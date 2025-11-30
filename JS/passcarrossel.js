@@ -18,4 +18,4 @@ function nextImage() {
     document.getElementById('radio' + count).checked = true;
 }
 
-setInterval(nextImage, 6000);
+setInterval(nextImage, 3000);

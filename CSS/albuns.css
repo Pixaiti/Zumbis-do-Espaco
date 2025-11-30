@@ -23,9 +23,10 @@ body {
     width: 100%;
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("https://ligadoamusica.com.br/wp-content/uploads/2024/04/zumbis-do-espaco.jpg");
+        url("../IMG/Zumbisalbum.webp");
     background-size: cover;
-    background-position: center;
+    background-position-x: center;
+    background-position-y: -10vh;
 }
 
 header {

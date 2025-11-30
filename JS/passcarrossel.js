@@ -1,3 +1,5 @@
+alert('Algumas capas de álbum podem ter imagens explicitas')
+
 let count = 1;
 document.getElementById('radio1').checked = true;
 
@@ -16,4 +18,4 @@ function nextImage() {
     document.getElementById('radio' + count).checked = true;
 }
 
-setInterval(nextImage, 3000);
+setInterval(nextImage, 6000);

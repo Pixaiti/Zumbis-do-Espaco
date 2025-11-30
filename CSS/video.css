@@ -1,0 +1,222 @@
+@font-face {
+    font-family: Bitten;
+    src: url(../IMG/RubikWetPaint-Regular.ttf) format('truetype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../IMG/zumbos.jpg");
+    background-size: cover;
+}
+
+
+header {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 15vh;
+    z-index: 1;
+}
+
+header a {
+    font-family: 'Bitten';
+    color: white;
+    text-decoration: none;
+    color: hsl(13, 100%, 40%);
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: lime;
+    transition: 0.3s ease;
+}
+
+main {
+    position: absolute;
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+}
+
+.slider {
+    width: 70vw;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slider iframe {
+    width: 100%;
+    height: 60vh;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 0.8s ease;
+}
+
+.manual-navigation {
+    z-index: 2;
+    position: absolute;
+    width: 70vw;
+    display: flex;
+    margin-top: 61vh;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.8s ease;
+}
+
+.manual-btn:hover {
+    background-color: white
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 0.3vw;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+    transition: 1s ease;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -25%;
+    transition: 1s ease;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -50%;
+    transition: 1s ease;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -75%;
+    transition: 1s ease;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 70vw;
+    margin-top: 61vh;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.8s ease;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 0.3vw;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: white;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: white;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: white;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: white;
+}
+
+
+#logo {
+    margin-left: 5vw;
+    margin-top: 0.5vh;
+}
+
+#header {
+    width: 100%;
+    height: 15vh;
+    transition: all 0.8s ease;
+}
+
+#header.a {
+    height: 10vh;
+}
+
+header ul {
+    list-style: none;
+    height: 70%;
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-right: 5vw;
+}
+
+header ul li {
+    color: white;
+}
+
+#shadow {
+    width: 100%;
+    margin-top: 65vh;
+    height: 20vh;
+    background-image: linear-gradient(to top, rgb(0, 0, 0), transparent);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: lightgray;
+    margin-top: 85vh;
+    background-color: black;
+    height: 15vh;
+    width: 100%;
+    position: absolute;
+}
+
+footer ul {
+    list-style: none;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

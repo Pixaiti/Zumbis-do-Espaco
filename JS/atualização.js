@@ -1,1 +1,1 @@
-document.getElementById("att").innerHTML = "Data de atualização: 29/11/2025."
+document.getElementById("att").innerHTML = "Data de atualização: 30/11/2025."
